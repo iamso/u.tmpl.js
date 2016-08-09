@@ -1,0 +1,38 @@
+{
+  "name": "u.tmpl.js",
+  "version": "0.1.0",
+  "description": "simple javascript template function",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/iamso/u.tmpl.js.git"
+  },
+  "authors": [
+    "Steve Ottoz <so@dev.so>"
+  ],
+  "main": "dist/u.tmpl.min.js",
+  "license": "MIT",
+  "homepage": "https://github.com/iamso/u.tmpl.js.git",
+  "ignore": [
+    ".bower.json",
+    ".editorconfig",
+    ".git",
+    ".gitattributes",
+    ".gitignore",
+    "demo",
+    "doc",
+    "extensions",
+    "grunt",
+    "Gruntfile.js",
+    "node_modules",
+    "src"
+  ],
+  "keywords": [
+    "u.js",
+    "jquery",
+    "template"
+  ],
+  "dependencies": {
+    "u.js": "0.*",
+    "jquery": "*"
+  }
+}
