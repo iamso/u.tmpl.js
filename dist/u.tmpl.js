@@ -1,8 +1,8 @@
 /*!
- * u.tmpl.js - Version 0.1.0
+ * u.tmpl.js - Version 0.2.0
  * simple javascript template function
  * Author: Steve Ottoz <so@dev.so>
- * Build date: 2016-08-09
+ * Build date: 2016-08-13
  * Copyright (c) 2016 Steve Ottoz
  * Released under the MIT license
  */
@@ -28,9 +28,9 @@
   $.tmpl = function tmpl(str, data){
     // Figure out if we're getting a template, or if we need to
     // load the template - and be sure to cache the result.
-    var fn = !/\W/.test(str) ?
+    var fn = !/<%.*%>/.test(str) ?
       cache[str] = cache[str] ||
-        tmpl($('#' + str).html()) :
+        tmpl($(str).html()) :
 
       // Generate a reusable function that will serve as a template
       // generator (and which will be cached).
