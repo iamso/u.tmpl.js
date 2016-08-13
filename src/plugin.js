@@ -7,7 +7,7 @@
     // load the template - and be sure to cache the result.
     var fn = !/<%.*%>/.test(str) ?
       cache[str] = cache[str] ||
-        tmpl($('#' + str).html()) :
+        tmpl($(str).html()) :
 
       // Generate a reusable function that will serve as a template
       // generator (and which will be cached).
